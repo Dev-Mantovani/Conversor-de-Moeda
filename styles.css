@@ -114,3 +114,20 @@ opacity: 0.8;
 transition: 0.5;
 
 }
+
+@media screen and (max-width:700px) {
+
+
+    .principal{
+
+        width: 100%;
+    }
+
+    .din {
+        width: 117px;
+
+    }
+
+
+
+    }

@@ -149,6 +149,12 @@ function convert() {
 
         }).format(valordigitado / valoreuro);
 
+        convert2.innerHTML = new Intl.NumberFormat("pt-BR", {
+            style: "currency",
+            currency: "BRL"
+
+        }) .format(valordigitado);
+
 
     }
     
