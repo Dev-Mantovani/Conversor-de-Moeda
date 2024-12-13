@@ -121,12 +121,37 @@ transition: 0.5;
     .principal{
 
         width: 100%;
+      
     }
 
     .din {
-        width: 117px;
-
+        width: 200px;
+        position: fixed;
+        top: 77%;
+        left: 127px;
     }
+   
+
+
+    img {
+        width: 29px;
+        background: unset;
+    }
+
+
+
+button {
+
+    width: 39%;
+}
+
+
+
+
+
+
+
+
 
 
 
