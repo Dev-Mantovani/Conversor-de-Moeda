@@ -1,0 +1,116 @@
+
+* {
+box-sizing: border-box;
+margin: none;
+border: none;
+font-family: 'Lucida Sans';
+z-index: 1;
+}
+body {
+    background: url(./img/dindin.jpg);
+    display: block;
+    background-size: cover;
+
+}
+
+img {
+    width: 45px;
+    background: unset;
+
+}
+.din {
+    width: 200px;
+
+
+}
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-radius: 5px;
+    border-color: black;
+    z-index: 2;
+
+
+}
+
+.real {
+    color: black;
+
+
+}
+.principal {
+    border: 2px solid black;
+    z-index: 2;
+    border-radius: 6px;
+    width: 25%;
+}
+
+input {
+    width: 90%;
+    border-radius: 5px;
+    border: 2px solid black;
+    height: 39px;
+    background-color: aliceblue;
+
+}
+
+
+
+.moeda {
+    width: 90%;
+    border-radius: 5px;
+    border: 2px solid black;
+    height: 39px;
+    background-color: aliceblue;
+
+}
+
+
+.real  {
+    width: 90%;
+    border-radius: 5px;
+    border: 2px solid black;
+    height: 39px;
+    background-color: aliceblue;
+
+}
+
+p {
+    background-color: aliceblue;
+}
+h2{
+    background-color: aliceblue;
+
+}
+option {
+
+    background-color: aliceblue;
+}
+
+
+section {
+
+    background-color: aliceblue;
+}
+
+
+button {
+    margin-top: 20px;
+    margin-bottom: 20px;
+width: 90%;
+border: 2px solid black;
+background: darkblue;
+border-radius: 10px;
+height: 50px;
+cursor: pointer;
+color: white;
+
+}
+
+button:hover {
+opacity: 0.8;
+transition: 0.5;
+
+}

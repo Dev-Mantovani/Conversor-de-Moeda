@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <main>
+        <img src="./img/dinheiro.gif" alt="" class="din">
+        <section class="principal">
+        <p> Conversor de</p>
+       <select onchange="troquei()" class="real moeda2" >
+            <option name ='br'  value="real">R$ Real Brasileiro</option>
+            <option name = usa  value="dolar">US$ Dólar Americano</option>
+            <option name = euro value="euro">US$ Euro</option>
+       </select>
+        <p> Converter para</p>
+        <select onchange="troquei()" class="moeda" name="moeda" id="moeda">
+            <option name = usa value="dolar">US$ Dólar Americano</option>
+            <option name = euro value="euro">US$ Euro</option>
+            <option name ='br'  value="real">R$ Real Brasileiro</option>
+        </select>
+        <p class="valor"> Valor</p>
+        <input type="number" placeholder="Digite seu Valor" class="valordigitado">
+        <button onclick="convert()"> Converter</button>
+        <section>
+                <img class="bandeira2" src="./img/brasil.png" alt="">
+                <h2 class="descricao2" >Real</h2>
+                <p class="convert2"> R$ 0,00</p>
+                <img src="./img/seta.png" alt="">
+                <br>
+                <img  class = "bandeira" name="bandeira" src="./img/eua.png" alt="">
+                <h2 class="descricao" >Dolar </h2>
+                <p class="convert"> $ 0,00</p>
+                
+
+        </section>
+    </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
