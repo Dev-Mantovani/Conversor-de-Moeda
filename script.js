@@ -93,16 +93,18 @@ function troquei() {
 
 
 
-function convert() {
+ async function convert() {
     const valordigitado = document.querySelector(".valordigitado").value;
-    const valordolar = 5.21;
-    const valoreuro = 6.14;
+    
     const convert2 = document.querySelector (".convert2")
 
     const real = document.querySelector(".real1");
     const convertvalor = document.querySelector(".convert");
 
+        const data = await fetch ('https://economia.awesomeapi.com.br/last/USD-BRL,EUR-BRL,BTC-BRL').then (Response => Response.json())
 
+        const valordolar = data.USDBRL.ask;
+        const valoreuro = data.EURBRL.ask;
 
     if (moeda.value == "dolar" ) {
         convertvalor.innerHTML = new Intl.NumberFormat("en-US", {
