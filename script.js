@@ -184,19 +184,35 @@ function troquei() {
             currency: "BRL"
     
 
+        }).format(valordigitado * valordolar);
+
+        convert2.innerHTML = new Intl.NumberFormat("en-US", {
+            style: "currency",
+            currency: "USD"
+
+        }) .format(valordigitado);
+        
+
+    }
+
+   
+    if (moeda2.value == "dolar1" && moeda.value == "dolar"  ) {
+        convertvalor.innerHTML = new Intl.NumberFormat("en-US", {
+            style: "currency",
+            currency: "USD"
+    
+
         }).format(valordigitado);
 
         convert2.innerHTML = new Intl.NumberFormat("en-US", {
             style: "currency",
             currency: "USD"
 
-        }) .format(valordigitado * valordolar);
+        }) .format(valordigitado);
         
 
     }
 
-
-    
 
 }
 
