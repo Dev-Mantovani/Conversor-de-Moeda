@@ -43,7 +43,7 @@ function troquei() {
     }
 
 
-    if (moeda2.value == "dolar") {
+    if (moeda2.value == "dolar1") {
 
         const bandeira2 = document.querySelector(".bandeira2")
         const descricao2 = document.querySelector(".descricao2")
@@ -173,10 +173,30 @@ function troquei() {
             currency: "BRL"
 
         }) .format(valordigitado);
+         
+
+    }
+
+// Moeda2 //
+    if (moeda2.value == "dolar1" && moeda.value == "real"  ) {
+        convertvalor.innerHTML = new Intl.NumberFormat("pt-BR", {
+            style: "currency",
+            currency: "BRL"
+    
+
+        }).format(valordigitado);
+
+        convert2.innerHTML = new Intl.NumberFormat("en-US", {
+            style: "currency",
+            currency: "USD"
+
+        }) .format(valordigitado * valordolar);
         
 
     }
 
+
+    
 
 }
 
